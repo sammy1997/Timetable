@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400);
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+    }
+
+body {
+  font-size: 100%;
+  font-family: 'Quicksand', sans-serif; 
+}
+
+p.heading {
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: 2em;
+  text-align: center;
+}
+
+.wrapper {
+  margin: 30px auto;
+  max-width: 600px;
+}
+.dropdownbox {
+  margin: 0 auto;
+  width: 400px;
+  margin-top: 40px;
+  background: rgb(129,111,127);
+  color: rgb(254,238,223);
+  cursor: pointer;
+}
+
+.dropdownbox > p {
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 1.25em;
+  line-height: 1.4em;
+  user-select: none;
+  -moz-user-select:none;
+  /* Safari */
+  -khtml-user-select: none;
+}
+
+ul.menu {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  overflow: hidden;
+  height: 0;
+  margin-top: 10px;
+     -webkit-transition: all 0.3s ease-in; 
+   -moz-transition: all 0.3s ease-in;
+     -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+  /*-moz-transform:scale(0); */
+  background: rgb(129,111,127);
+  color: rgb(254,238,223);
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select:none;
+  /* Safari */
+  -khtml-user-select: none;
+}
+
+ul.menu li {
+  padding: 2px 10px;
+    font-size: 1.25em;
+  line-height: 1.4em;
+       -webkit-transition: all 0.3s ease-in; 
+   -moz-transition: all 0.3s ease-in;
+     -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+  border-bottom: 1px dotted rgb(254,238,223);
+}
+ul.menu li:hover {
+  padding-left: 20px;
+  color: rgb(129,111,127);
+  background: rgb(254,238,223);
+}
+
+.menu.showMenu {
+  /*-moz-transform:scale(1);*/
+  height: 429px;
+}
+body{
+  height: 100vh;
+  background-image: url("../images/acad.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
