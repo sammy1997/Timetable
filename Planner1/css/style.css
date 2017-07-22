@@ -1,0 +1,102 @@
+/* line 30, ../compass/sass/style.scss */
+.responstable {
+  margin: 1em 0;
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+}
+/* line 39, ../compass/sass/style.scss */
+.responstable tr {
+  border: 1px solid #D9E4E6;
+}
+/* line 41, ../compass/sass/style.scss */
+.responstable tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+/* line 46, ../compass/sass/style.scss */
+.responstable th {
+  display: none;
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 1em;
+}
+/* line 52, ../compass/sass/style.scss */
+.responstable th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+/* line 56, ../compass/sass/style.scss */
+.responstable th:nth-child(2) {
+  display: table-cell;
+}
+/* line 58, ../compass/sass/style.scss */
+.responstable th:nth-child(2) span {
+  display: none;
+}
+/* line 59, ../compass/sass/style.scss */
+.responstable th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  /* line 63, ../compass/sass/style.scss */
+  .responstable th:nth-child(2) span {
+    display: block;
+  }
+  /* line 64, ../compass/sass/style.scss */
+  .responstable th:nth-child(2):after {
+    display: none;
+  }
+}
+/* line 69, ../compass/sass/style.scss */
+.responstable td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+}
+/* line 73, ../compass/sass/style.scss */
+.responstable td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+@media (min-width: 480px) {
+  /* line 69, ../compass/sass/style.scss */
+  .responstable td {
+    border: 1px solid #D9E4E6;
+  }
+}
+/* line 83, ../compass/sass/style.scss */
+.responstable th, .responstable td {
+  text-align: left;
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  /* line 83, ../compass/sass/style.scss */
+  .responstable th, .responstable td {
+    display: table-cell;
+    padding: 1em;
+  }
+}
+
+/* line 105, ../compass/sass/style.scss */
+body {
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  color: #024457;
+  background: #f2f2f2;
+}
+
+/* line 112, ../compass/sass/style.scss */
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+}
+/* line 116, ../compass/sass/style.scss */
+h1 span {
+  color: #167F92;
+}

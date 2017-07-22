@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Time Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style1.css">
+  <link rel="stylesheet" type="text/css" href="css/style2.css">
+  <script>
+		function openCity(evt, cityName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(cityName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+</script>
+<style type="text/css">
+	#buttons{
+		width: 100%;
+		display: flex;
+		flex-wrap:wrap;
+		align-items:center;
+		justify-content:center;
+	}
+	#delete,#validate{
+		margin: 50px;
+	}
+</style>
+</head>
+<body>
+	<div class="tab">
+		  <button class="tablinks" onclick="openCity(event, 'plan1')">Plan1</button>
+		  <button class="tablinks" onclick="openCity(event, 'plan2')">Plan2</button>
+		  <button class="tablinks" onclick="location.href = '../Main/index.html';">Home Page</button>
+		  <button class="tablinks" onclick="location.href = '../Subjects/index.html';">Subjects</button>
+	</div>
+	<div id="plan1" class="tabcontent">
+		<div class="wrap">
+		    <h3 class="table-title">Registration Cart:</h3>
+		    <table class="comparison-table">
+		        <thead>
+		            <tr>
+		                <td>Subject</td>
+		                <td>Desc.</td>
+		                <td class="marker">Status</td>
+		            </tr>
+		        </thead>
+		        <tr>
+		            <td>BIO F110</td>
+		            <td>Ok to add. No clash.</td>
+		            <td class="marker">✔</td>
+		           
+		        </tr>
+		        <tr>
+		            <td>CHEM F111</td>
+		            <td>Ok to add. No clash</td>
+		            <td class="marker">✔</td>
+		        </tr>
+		        <tr>
+		            <td>CHEM F110</td>
+		            <td>Ok to add. No clash</td>
+		            <td class="marker">✔</td>
+		        </tr>
+		        <tr>
+		            <td>PHY F110</td>
+		            <td>Not Ok. Clash.</td>
+		            <td class="marker">✖</td>
+		            
+		        </tr>
+		        <tr>
+		            <td>BITS F111</td>
+		            <td>Not Ok. Clash.</td>
+		            <td class="marker">✖</td>
+		        </tr>
+		    </table>
+		</div>
+	</div>
+	<div id="plan2" class="tabcontent">
+		<h3 class="table-title">Registration Cart:</h3>
+		<table class="responstable">
+		  
+		  <tr>
+		    <th>Select</th>
+		    <th data-th="Driver details"><span>Class</span></th>
+		    <th>Time</th>
+		    <th>Instructor</th>
+		    <th>Units</th>
+		    <th>Status</th>
+		  </tr>
+		  
+		  <tr>
+		    <td><input type="checkbox"/></td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>Ok</td>
+		  </tr>
+		  
+		  <tr>
+			<td><input type="checkbox"/></td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>Ok</td>
+		  </tr>
+		  
+		  <tr>
+		    <td><input type="checkbox"/></td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>Clash</td>
+		  </tr>
+		  
+		  <tr>
+		    <td><input type="checkbox"/></td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>Ok</td>
+		  </tr>
+		  
+		</table>
+		<div id="buttons">
+			<button id="delete">delete</button>
+		    <button id="validate">validate</button>
+		</div>
+		
+	</div>
+</body>

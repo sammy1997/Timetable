@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* line 8, ../compass/sass/style.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 31, ../compass/sass/style.scss */
+html {
+  font-size: 10px;
+}
+
+/* line 34, ../compass/sass/style.scss */
+body {
+  font-family: calibri, tahoma, arial, sans-serif;
+  padding: 20px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+/* line 41, ../compass/sass/style.scss */
+.wrap {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 47, ../compass/sass/style.scss */
+.intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #34b7f0;
+  text-align: center;
+  background: white;
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* line 67, ../compass/sass/style.scss */
+h3.table-title {
+  color: #34b7f0;
+  font-weight: normal;
+  margin: 40px 0 0 10px;
+  font-size: 32px;
+  font-size: 3.2rem;
+}
+
+/* line 74, ../compass/sass/style.scss */
+.comparison-table {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-collapse: separate;
+}
+/* line 79, ../compass/sass/style.scss */
+.comparison-table thead tr {
+  color: #34b7f0;
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+/* line 83, ../compass/sass/style.scss */
+.comparison-table thead tr td {
+  padding-bottom: 10px;
+}
+/* line 84, ../compass/sass/style.scss */
+.comparison-table thead tr td {
+  border: none !important;
+}
+@media (max-width: 767px) {
+  /* line 79, ../compass/sass/style.scss */
+  .comparison-table thead tr {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+}
+/* line 90, ../compass/sass/style.scss */
+.comparison-table tr {
+  width: 100%;
+}
+/* line 92, ../compass/sass/style.scss */
+.comparison-table tr td {
+  border-right: 2px solid #34b7f0;
+}
+/* line 96, ../compass/sass/style.scss */
+.comparison-table tr:first-child td {
+  border-top: 2px solid #34b7f0;
+}
+/* line 97, ../compass/sass/style.scss */
+.comparison-table tr:first-child td:first-child {
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+/* line 100, ../compass/sass/style.scss */
+.comparison-table tr:first-child td:last-child {
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* line 105, ../compass/sass/style.scss */
+.comparison-table tr:last-child td {
+  border-bottom: 2px solid #34b7f0;
+}
+/* line 106, ../compass/sass/style.scss */
+.comparison-table tr:last-child td:first-child {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* line 109, ../compass/sass/style.scss */
+.comparison-table tr:last-child td:last-child {
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 113, ../compass/sass/style.scss */
+.comparison-table tr td:first-child {
+  width: 25%;
+  padding: 10px;
+  color: #34b7f0;
+  font-weight: bold;
+  border-left: 2px solid #34b7f0;
+}
+/* line 119, ../compass/sass/style.scss */
+.comparison-table tr td:first-child + td {
+  width: 45%;
+  padding: 10px;
+}
+/* line 124, ../compass/sass/style.scss */
+.comparison-table tr td.marker {
+  width: 10%;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 128, ../compass/sass/style.scss */
+.comparison-table tr td.marker[content="✔"] {
+  color: #34b7f0;
+}
+/* line 133, ../compass/sass/style.scss */
+.comparison-table tr:nth-child(even) {
+  background: #ccf1fb;
+}
+@media (max-width: 525px) {
+  /* line 137, ../compass/sass/style.scss */
+  .comparison-table td, .comparison-table tr td, .comparison-table tr td.marker, .comparison-table tr td:first-child, .comparison-table tr td:first-child + td {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-top: none;
+    border-bottom: none;
+    border-left: 2px solid #34b7f0;
+  }
+  /* line 145, ../compass/sass/style.scss */
+  .comparison-table tr:first-child td:first-child {
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  /* line 148, ../compass/sass/style.scss */
+  .comparison-table tr:first-child td:last-child {
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  /* line 151, ../compass/sass/style.scss */
+  .comparison-table tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  /* line 154, ../compass/sass/style.scss */
+  .comparison-table tr:last-child td:last-child {
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom: 2px solid #34b7f0;
+  }
+  /* line 158, ../compass/sass/style.scss */
+  .comparison-table tr td:first-child {
+    border-top: 2px solid #34b7f0;
+  }
+  /* line 160, ../compass/sass/style.scss */
+  .comparison-table tr td:first-child + td {
+    padding: 0 10px 10px;
+  }
+  /* line 164, ../compass/sass/style.scss */
+  .comparison-table tr td.marker {
+    padding: 10px;
+    font-weight: bold;
+  }
+  /* line 167, ../compass/sass/style.scss */
+  .comparison-table tr td.marker:before {
+    content: "Package 1: ";
+  }
+  /* line 170, ../compass/sass/style.scss */
+  .comparison-table tr td.marker + td.marker:before {
+    content: "Package 2: ";
+  }
+  /* line 173, ../compass/sass/style.scss */
+  .comparison-table tr td.marker + td.marker + td.marker:before {
+    content: "Package 3: ";
+  }
+  /* line 177, ../compass/sass/style.scss */
+  .comparison-table thead tr td.marker {
+    display: none;
+  }
+}
